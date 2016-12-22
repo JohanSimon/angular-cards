@@ -1,3 +1,3 @@
-Dit is een test project.
+Dit is een test app.
 
-Angular 2.0 Skeleton
+Angular 2.0 Simple Card reminder App
