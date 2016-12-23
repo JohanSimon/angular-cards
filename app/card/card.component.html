@@ -1,4 +1,4 @@
-<div class="col-sm-3">
+<div class="col-sm-3" *ngIf="!task.deleted">
     <div class="card" (click)="statusToggle()" [class.completed]="task.completed">
         <div class="card-block">
             <p>{{ task.content }}</p>
@@ -7,5 +7,9 @@
             <span *ngIf="!task.completed"><i class="fa fa-times" aria-hidden="true"></i>Not complete</span>
             <span *ngIf="task.completed"><i class="fa fa-check" aria-hidden="true"></i>Completed!</span>
         </div>
+        <div class="card-delete" (click)="deleteTask()">
+            <span><i class="fa fa-trash-o" aria-hidden="true"></i>Verwijder taak</span>
+        </div>
+
     </div>
 </div>

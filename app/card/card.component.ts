@@ -15,4 +15,8 @@ export class CardComponent {
     statusToggle() {
         this.task.completed = !this.task.completed;
     }
+
+    deleteTask() {
+        this.task.deleted = true;
+    }
 }
